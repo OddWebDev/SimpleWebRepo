@@ -1,0 +1,118 @@
+<!-- Semantic tags in HTML5 
+    <header> //could be used multiple times
+
+    <nav>    //could be used multiple times 
+               but rather use it once
+
+    <article>//could be used multiple times
+
+    <section>//could be used multiple times
+
+    <main>   //Always ONCE
+
+    <aside>  //could be used multiple times
+
+    <footer> //could be used multiple times
+        
+-->
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<title>Philosophia Blog</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="web dev, junior developer," />
+		<meta name="author" content="OddWebDev" />
+		<meta name="description" content="A sample blog." />
+
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link href="main.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	</head>
+
+	<body>
+		<header>
+			<div id="logo">
+				<a href="index.html">
+					<img src="img/OddWebDevLogo.png" alt="profile_Img" />
+					<h1>FAKE PHILOSOPHIA BLOG</h1>
+				</a>
+			</div>
+
+			<div class="menu">
+				<nav id="topnav">
+					<ul>
+						<li><a href="#">Main</a></li>
+						<li><a href="wpis.html">Latest posts</a></li>
+						<li><a href="#">Social media</a></li>
+						<li><a href="#">about me</a></li>
+						<li><a href="#">contact</a></li>
+						<li><a href="SignIn.html">Sign In</a></li>
+					</ul>
+				</nav>
+			</div>
+			<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+		</header>
+
+		<main>
+			<div id="regpage">
+				<div id="register">
+					<h3>Register</h3>
+					<form>
+						<div class="row">
+							<label>Enter username</label>
+						</div>
+						<div class="row">
+							<input type="text" placeholder="Username" />
+						</div>
+						<div class="row">
+							<label>Enter Password</label>
+						</div>
+						<div class="row">
+							<input type="password" placeholder="Password" />
+						</div>
+						<div class="row">
+							<label>Repeat password</label>
+						</div>
+						<div class="row">
+							<input type="password" placeholder="Password" />
+						</div>
+						<div class="row">
+							<label>Enter e-mail address</label>
+						</div>
+						<div class="row">
+							<input type="email" placeholder="address@domain.com" />
+						</div>
+						<div class="row">
+							<label>Date of birth</label>
+						</div>
+						<div class="row">
+							<input type="date" min="1900-01-01" max="2022-12-26" />
+						</div>
+						<div id="submitbutton">
+							<div><input type="submit" value="Sign In" /></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="socials">
+				<div class="square" id="tt">
+					<a href="#"> <i class="icon-note"></i> </a>
+				</div>
+				<div class="square" id="gh">
+					<a href="#"> <i class="icon-github"></i> </a>
+				</div>
+				<div class="square" id="yt">
+					<a href="#"> <i class="icon-youtube"></i> </a>
+				</div>
+				<div class="square" id="fb">
+					<a href="#"> <i class="icon-facebook-squared"></i> </a>
+				</div>
+
+				<p>Fake blog site &copy; OddWebDev 2020</p>
+			</div>
+		</footer>
+	</body>
+</html>

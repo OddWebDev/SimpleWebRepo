@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<title>Forms</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="web dev, junior developer," />
+		<meta name="author" content="OddWebDev" />
+		<meta name="description" content="All the truth." />
+
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<header><h1>Choose a t-shirt</h1></header>
+		<main>
+			<form method="post" enctype="multipart/form-data">
+				<div class="row">
+					<fieldset>
+						<legend>Size</legend>
+						<div>
+							<label><input type="radio" name="Tsize" />Small</label>
+						</div>
+						<div>
+							<label><input type="radio" name="Tsize" />Medium</label>
+						</div>
+						<div>
+							<label><input type="radio" name="Tsize" checked />Large</label>
+						</div>
+						<div>
+							<label><input type="radio" name="Tsize" />XLarge</label>
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="row">
+					<select name="colour" id="">
+						<optgroup label="regular">
+							<option>Black</option>
+							<option>white</option>
+						</optgroup>
+						<optgroup label="RGB">
+							<option>Red</option>
+							<option selected>Green</option>
+							<option>Blue</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div class="row">
+					<fieldset>
+						<legend>Material</legend>
+
+						<div>
+							<label><input type="checkbox" name="Tmaterial" disabled checked /> Polyester</label>
+						</div>
+						<div>
+							<label><input type="checkbox" name="Tmaterial" disabled /> Wool</label>
+						</div>
+						<div>
+							<label><input type="checkbox" name="Tmaterial" /> Cotton</label>
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="row">
+					<select name="Toptions" multiple>
+						<option name="Toptions">A</option>
+						<option name="Toptions">B</option>
+						<option name="Toptions">C</option>
+						<option name="Toptions">D</option>
+					</select>
+				</div>
+
+				<div class="row">
+					<select>
+						<optgroup label="regular">
+							<option>Black</option>
+							<option>white</option>
+						</optgroup>
+						<optgroup label="RGB">
+							<option>Red</option>
+							<option>Green</option>
+							<option>Blue</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div class="row">
+					<label>Name <input type="text" name="data" placeholder="enter name" /></label>
+					<label>password <input type="password" name="data" placeholder="enter password" /></label>
+					<label>search <input type="search" name="data" placeholder="Search" /></label>
+					<label>Age <input type="number" name="data" placeholder="enter your age" /></label>
+				</div>
+
+				<div class="row">
+					<label>
+						e-mail address <input type="email" name="e-mail" placeholder="address@domain.com" />
+					</label>
+					<label> Phone number <input type="tel" name="telephon" placeholder="123456789" /> </label>
+				</div>
+
+				<div class="row">
+					<label> Date <input type="date" name="day" min="2021-03-01" max="2023-03-01" /> </label>
+					<label> Time <input type="time" name="time" step="1" min="09:00" max="17:00" /> </label>
+				</div>
+
+				<div class="row">
+					<div><label for="comment">Comments on the draft</label></div>
+					<textarea
+						name="comment"
+						id="comment"
+						rows="6"
+						cols="48"
+						style="resize: none"
+						maxlength="25"
+						minlength="10"
+					>
+					</textarea>
+				</div>
+
+				<div class="row">
+					<label>Send pics</label>
+					<input type="file" name="image" accept="image/x-png,image/gif,image/jpeg" multiple />
+				</div>
+
+				<div class="row">
+					<label>pick colour</label>
+					<input type="color" name="colour" value="#ff0000" />
+				</div>
+
+				<div class="row">
+					<label>Proggress</label>
+					<progress max="100" value="50"></progress>
+				</div>
+
+				<div class="row">
+					<label>Meter</label>
+					<meter max="100" title="percent" value="40" low="30" high="70" optimum="75"></meter>
+				</div>
+
+				<div class="row">
+					<label>URL</label>
+					<input type="url" />
+				</div>
+
+				<div class="row" name="token" value="faketoken-ug712g3786hdf18asd812sd8123">
+					<fieldset><label> Hidden input: </label> <input type="hidden" /></fieldset>
+				</div>
+
+				<div class="row">
+					<input type="submit" value="submit" />
+					<input type="reset" value="reset" />
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
