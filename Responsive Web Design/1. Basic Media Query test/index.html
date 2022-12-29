@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<title>Basic Media Query Test</title>
+		<meta name="viewport" content="width=device-width, initialscale=1.0" />
+		<style>
+		
+			@media screen and (min-width: 320px) {
+				#block {
+					background-color: antiquewhite;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			@media screen and (min-width: 520px) {
+				#block {
+					background-color: rgb(252, 150, 16);
+					height: 100%;
+					width: 90%;
+				}
+			}
+			@media screen and (min-width: 720px) {
+				#block {
+					background-color: rgb(255, 30, 0);
+					height: 100%;
+					width: 80%;
+				}
+			}
+			@media screen and (min-width: 920px) {
+				#block {
+					background-color: rgb(6, 205, 231);
+					height: 100%;
+					width: 70%;
+				}
+			}
+            #block{
+                margin: auto;
+            }
+		</style>
+	</head>
+	<body>
+		<div style="height: 100vh; width: 100vw;">
+			<div id="block">a</div>
+		</div>
+	</body>
+</html>

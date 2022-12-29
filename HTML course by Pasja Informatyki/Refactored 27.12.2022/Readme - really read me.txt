@@ -1,0 +1,1 @@
+I only changed day 1, day 2, only some of day 3 (it's a mess right now) and only some of the Philosophia blog website (it's a mess right now too). the rest is untouched.
